@@ -23,8 +23,8 @@ public User get(String sid){
         }
 }
     @Override
-    public List<User> findAll() {
-        return userDao.findAll();
+    public List<User> findAll(int pageNum, int pageSize) {
+        return userDao.findAll(pageNum,pageSize);
     }
 
     @Override
@@ -40,5 +40,10 @@ public User get(String sid){
     @Override
     public boolean del(int id) {
         return userDao.delete(id)==1;
+    }
+
+    @Override
+    public int count() {
+        return userDao.count();
     }
 }

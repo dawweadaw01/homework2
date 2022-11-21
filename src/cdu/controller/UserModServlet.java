@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
 
-@WebServlet("/user/mod")
+@WebServlet("/mod")
 public class UserModServlet extends HttpServlet {
     UserServie userServie=new UserServiceImpl();
     @Override
